@@ -1,0 +1,62 @@
+body {
+    margin: 20px 80px;
+    padding: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: rgba(255, 99, 71, 0.224);
+    position: relative;
+   align-content:  center;
+    /* max-width: 500vh; */
+}
+
+
+.logo-img {
+    /* display: flex; */
+    justify-content: center;
+    margin-top: 25px;
+    padding-top: 40px; 
+    position: absolute;
+    transform: translate(290%);
+   
+}
+
+.img-logo {
+    border: 7px solid black;
+    border-radius: 50%;
+    width: 173px;
+       
+}
+
+.icerik {
+    margin-top: 150px;
+    margin-left: 35%;
+    border: 7px solid black;
+    /* background-color: rgba(255, 99, 71, 0.658); */
+    background-color: #db6b5c;
+    width: 730px;
+    height: 550px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 1px 2px 3px rgba(255, 255, 250, 0.5);
+    
+    
+}
+h2 {margin-top: 110px;
+    font-size: 1.8rem;
+    font-weight: 600px;
+    text-align: center;
+}
+
+.span {
+    color: yellow;
+}
+
+p {
+    font-size: 3rem;
+    font-weight: bold;color: rgba(0, 0, 0, 0.543);
+    padding: 4px 8px;
+    margin: 5px 7px;
+}
+
+
+
