@@ -1,0 +1,136 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    color: #666;
+    height: 100%; 
+    /* buraya 100% vermezsek  */
+}
+
+.background-img1{
+    background-image: url(./img/bg.jpg);
+    min-height: 100%;
+}
+
+.background-img2{
+    background-image: url(./img/bg2.jpg);
+    min-height: 80%;
+}
+
+.background-img3{
+    background-image: url(./img/bg3.jpg);
+    min-height: 80%;
+}
+
+.background-img4{
+    background-image: url(./img/bg4.jpg);
+    min-height: 80%;
+}
+
+.background-img1,
+.background-img2,
+.background-img3,
+.background-img4 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity:0.7;
+    background-image:linear-gradient(700deg, 60, 80, 0.4);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.baslik-icerigi {
+    text-align: center;
+    letter-spacing: 10px;
+    color: white;
+}
+
+.baslik-icerigi-buyuk-baslik {
+    background-color: rgba(0, 0, 0, 0.873);
+    font-size: 3.5rem;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    outline: 10px inset purple ;
+    outline-offset: 15px;
+    text-transform: uppercase;
+    line-height: 2rem;
+    padding: 2rem;
+
+}
+
+.section {
+    text-align: center;
+    margin: 1rem 2.5rem;
+    justify-content:space-between;
+    padding: 2rem
+    
+}
+
+.section-light {
+    /* margin: 1.5rem 3rem; */
+    opacity: 0.8;
+    color: rgba(0, 0, 0, 0.512);
+    background-color:white;
+    font-weight: 500px;
+    align-content: space-between;
+    
+}
+
+.section-dark {
+    /* margin: 1.5rem 3rem; */
+    background-color: rgba(0, 0, 0, 0.867);
+    color: rgba(255, 255, 255, 0.636);
+    font-weight: 500px;
+    margin: 0;
+    align-content: space-between;
+
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1rem;
+    text-align:center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.baslik-icerigi-baslik-logo {
+    width: 30%;
+    opacity: 0.8;
+   
+}
+
+.baslik-icerigi-orta-baslik {
+    background-color: rgba(0, 0, 0, 0.872);
+    font-size: 3rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    outline: 5px inset purple ;
+    outline-offset: 6px;
+    text-transform: capitalize;
+    line-height: 1.2rem;
+    padding: 1rem;
+}
+
+.baslik-icerigi-kucuk-baslik {
+    background-color: rgba(0, 0, 0, 0.872);
+    font-size: 2.5rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    outline: 4px inset purple ;
+    outline-offset: 6px;
+    text-transform: uppercase;
+    line-height: 0.8rem;
+    padding: 1rem;
+}
