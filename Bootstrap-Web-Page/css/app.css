@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+.legend{
+    /* font-family: 'Audiowide', cursive; */
+    font-family: 'New Rocker', cursive;
+    font-size: 2rem;
+}
+
+.legend2{
+    /* font-family: 'Audiowide', cursive; */
+    /* font-family: 'New Rocker', cursive; */
+    font-size: 4rem;
+}
+
+.navbar {
+    position: fixed;
+}
+
+.nav-link {
+    
+    color: grey;
+}
+
+.nav-link:hover{
+
+    background-color: rgba(255, 0, 0, 0.459);
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.btn:hover{
+    background-color: firebrick !important;
+}
+
+.banner {
+    background: url("../img/zakat-siluet-kon.jpg") no-repeat center center;
+    background-size: cover;
+    color: purple;
+    height: calc(100vh - 20px);
+    padding: 15%;
+}
+
+
+.services{
+    background-color:bisque;
+    
+}
+
+.circle{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.722);
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    color: white;
+}
+
+.circle i {
+    /* position: relative; */
+    margin-top: 30px;
+    /* top: 30px; */
+}
+
+.card {
+    transition: all 2s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.product-img{
+ object-fit: cover;
+}
+
+.about-us{
+    background-color: azure;
+}
+
+.clearfix{
+ margin: 0 100px !important;
+}
+
+.contact {
+    background: url(../img/map.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+.ourTeam img{
+    margin: auto;
+    width: 240px;
+    border: 12px groove plum;
+    border-radius: 50%;
+}
+
+.socialMedia{
+    display: inline-block;
+    width: 45px;
+    height: 45px;color: white;
+    background-color: darkcyan;
+    border-radius: 50%;
+    line-height: 40px
+}
