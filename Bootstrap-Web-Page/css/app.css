@@ -103,7 +103,8 @@
 .socialMedia{
     display: inline-block;
     width: 45px;
-    height: 45px;color: white;
+    height: 45px;
+    color: white;
     background-color: darkcyan;
     border-radius: 50%;
     line-height: 40px
