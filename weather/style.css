@@ -1,0 +1,48 @@
+body{
+    background-image: url("./manzara-3631313_1280.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    justify-content: center;
+    opacity: 0.8;
+    
+}
+
+.genelCard{
+    width: 100px;
+    height:350px;
+    background-color:rgba(20, 220, 103, 0.157);
+    justify-content: center;
+    align-items: center;
+    gap: 0 px;
+    border-radius: 20px;
+}
+
+.list-group-item{
+ gap: 15pxs;
+background: none;
+font-size: 1.3rem;
+font-weight: bolder;
+justify-content: center;
+}
+
+.input-group{
+    width: 390px;
+ 
+}
+.form-control{
+    background:#c6ccc0f9 !important;
+}
+
+img{
+    width: 90px;
+    height: 120px;
+}
+
+.row{
+    justify-content: center;
+    /* gap: 20px; */
+    /* background-color: rgba(128, 128, 128, 0.224); */
+}
+
