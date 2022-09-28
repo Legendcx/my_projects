@@ -30,6 +30,7 @@ const renderWeather = (item) => {
     // weatherListDiv.innerHTML = `<h2>City is wrong</h2>`;
   //  return;
 
+
   }
   const { name, main, weather } = item;
   weatherListDiv.innerHTML = `    
@@ -48,15 +49,21 @@ const renderWeather = (item) => {
 
 
 let cities = [];
+// console.log(cities);
 const aciklama = document.querySelector(".aciklama")
 //* buton click için
 button.addEventListener("click", () => {
 if(cities.includes(input.value.toLowerCase())){
   aciklama.innerHTML = `<h2>${input.value.toUpperCase()} mevcut, başka bir şehir giriniz</h2>`;
+  cities = [];
+
+
 }else{
   cities.push(input.value.toLowerCase())
   getWeather(input.value);
   aciklama.innerHTML = `<h2> </h2>`;
+  
+  
 }
   input.value = "";
 });
