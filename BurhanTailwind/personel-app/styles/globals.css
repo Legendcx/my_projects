@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-r from-sky-400 via-rose-400 to-lime-400 text-white font-Burhan;
+  }
+}
+
+
+
+@layer components {
+  .registerInput {
+    @apply px-5 py-2.5 rounded-md bg-[#3050ae]/10 text-[#3ab9b9] font-semibold focus:outline-none focus:bg-[#b8dbb2] transition-all duration-300 focus:text-[#111] placeholder:text-[#4a46ce] border-b-4  border-[#d2ebcd]/10 focus:border-orange-400;
+  }
+
+  .inputDiv {
+    @apply relative;
+  }
+
+  .errorMessage {
+    @apply absolute text-xs text-red-600 animate-pulse top-[50px];
+  }
+
+  .submitButton {
+    @apply rounded-md py-2.5 bg-blue-700 text-[#bcc] font-bold transition-all hover:bg-blue-700/40 mt-6;
+  }
+}
