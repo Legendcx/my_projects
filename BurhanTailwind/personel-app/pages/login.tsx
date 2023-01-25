@@ -25,7 +25,7 @@ const login = (props: Props) => {
   return (
     <div>
       <Head>
-        <title>Login</title>
+        <title>Loginn</title>
       </Head>
 
       <motion.div
