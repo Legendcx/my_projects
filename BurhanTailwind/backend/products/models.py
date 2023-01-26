@@ -13,7 +13,7 @@ class Product(models.Model):
     image = models.ImageField(upload_to="products",blank=True, null=True)
     
     def __str__(self):
-        return f"{self.name} - {self.seller}"
+        return f"{self.name} - {self.seller} - {self.brand}"
 
 # class Favorites(models.Model):
 #     product = models.ForeignKey(Product, on_delete=models.CASCADE)

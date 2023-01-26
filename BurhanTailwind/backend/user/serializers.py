@@ -29,13 +29,13 @@ class RegisterUserSerializer(serializers.ModelSerializer):
     def validate(self, data):
         if data["password"] != data["password2"]:
             raise serializers.ValidationError(
-                {"password" : "Didn't match"}
+                {"password2" : "Passwords must match."}
             )
         return data
     
     def create(self, validated_data):
-        validated_data.pop("password2")
         password = validated_data.get("password")
+        validated_data.pop("password2")
         user = User.objects.create(**validated_data)
         user.set_password(password)
         user.save()
@@ -57,10 +57,10 @@ class ProfileSerializer(serializers.ModelSerializer):
     user_id = serializers.IntegerField(required=False)
     favorites = ProductSerializer(many=True, read_only=True)
     cards = ProductSerializer(many=True, read_only=True)
-    sold_products = serializers.SerializerMethodField()
+    sell_products = serializers.SerializerMethodField()
     class Meta:
         model = Profile
-        fields = ("id", "user", "user_id", "avatar", "bio", "favorites", "cards")
+        fields = ("id", "user", "user_id", "avatar", "bio", "favorites", "cards", "sell_products")
         
 #! buradaki ProfileSerializer'ın kullanıldığı view (ProfileUpdateView)
 #! RetrieveUpdateAPIView'dan inherit edildiği için create metodu değil update metodu override edilmeli,        
@@ -70,7 +70,7 @@ class ProfileSerializer(serializers.ModelSerializer):
         instance.save()
         return instance
     
-    def get_sold_products(self, instance):
+    def get_sell_products(self, instance):
         products = Product.objects.all()
         product = products.filter(seller_id=instance.user_id)
         return ProductSerializer(product, many=True).data

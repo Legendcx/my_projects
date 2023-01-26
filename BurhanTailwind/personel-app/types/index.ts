@@ -34,3 +34,15 @@ export type ProductType = {
   vote : number | null;
   name: string;
 }
+
+
+export type SellerProfileType = {
+  id: number;
+  user : string;
+  user_id : number;
+  bio : string;
+  avatar : string;
+  favorites?: [];
+  cards?: [];
+  seller_products?: [];
+}

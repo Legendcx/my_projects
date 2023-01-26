@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 from django.contrib.auth.models import User
 from products.models import Product
 
@@ -12,7 +13,7 @@ class Profile(models.Model):
     favorites = models.ManyToManyField(Product, blank=True, null=True, related_name="favorites")
     cards = models.ManyToManyField(Product, blank=True, null=True, related_name="cards")
     # sell_product = models.ForeignKey(Product, on_delete=models.CASCADE, blank=True, null=True)
-    display_name = models.CharField(max_length=30, blank=True, null=True)
+    # display_name = models.CharField(max_length=30, blank=True, null=True)
     avatar = models.ImageField(upload_to="users", default="users/avatar.png")
     bio = models.TextField(blank=True, null=True)
     

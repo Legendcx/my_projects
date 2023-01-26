@@ -18,7 +18,6 @@ const Product = ({ item }: Props) => {
   };
 
   return (
-  <div>
     <div className="flex justify-center items-center">
       <div className="bg-gray-300 p-10 rounded-lg shadow-md">
         <h1 className="text-xl font-bold">{item.brand}</h1>
@@ -38,7 +37,6 @@ const Product = ({ item }: Props) => {
         </button>
       </div>
     </div>
-  </div>
   );
 };
 
