@@ -1,0 +1,54 @@
+/** Genel ayarlama  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/** Menünün nasıl açılacağına dair çalışma */
+.left-menu{
+  font-size: 1.5rem;
+  font-weight: bolder;
+  width: 21vw;
+  height: 100vh;
+  background-color:#B3E5BE;
+  position: absolute;
+  top: 0;
+  left: -17.5vw;
+  transition: all 1s;
+  
+}
+.left-menu:hover{left: 0;}
+
+
+
+.left-menu .title{
+  position: relative;
+  background-color: #804674;
+  padding: 0.7rem;
+  color:#fdf7c3;
+}
+
+.left-menu .title i{
+  position: absolute;
+  right: 1.2rem;
+  transition: transform 2s;
+
+}
+
+.left-menu:hover i{
+  transform: rotateY(180deg)
+}
+
+.left-menu ul{
+  list-style-type:none ;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.left-menu ul a{
+  text-decoration: none;
+  display: block;
+  color:#F5FFC9;
+  padding: 0.7rem;
+}
